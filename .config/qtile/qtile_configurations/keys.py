@@ -37,14 +37,14 @@ keys = [
     Key([mod, "shift"], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "f", lazy.spawn("firefox"), desc="browser"),
-    Key([mod], "m", lazy.spawn("rofi -show drun -theme /home/alvaro/.config/rofi/launchers/type-2/style-10.rasi")),
+    Key([mod], "m", lazy.spawn("rofi -show drun -theme ~/.config/rofi/launchers/type-2/style-10.rasi")),
     Key([mod], "e", lazy.spawn("thunar"), desc="thunar"),           
     Key([mod], "v", lazy.spawn("vmware"), desc="vmware"),
     
 
     Key([mod], "e", lazy.spawn("thunar"), desc="thunar"),       
     # Toggle between different layouts as defined below
-    Key([mod], "Tab", lazy.spawn("rofi -show windowcd -theme /home/alvaro/.config/rofi/launchers/type-2/style-15.rasi"), desc="Toggle between layouts"),
+    Key([mod], "Tab", lazy.spawn("rofi -show windowcd -theme ~/.config/rofi/launchers/type-2/style-15.rasi"), desc="Toggle between layouts"),
     Key([mod], "F11", lazy.next_layout(), desc="next layout"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),

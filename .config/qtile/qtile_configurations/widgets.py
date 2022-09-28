@@ -132,7 +132,7 @@ widgets = [
   widget.LaunchBar(
              foreground = Ctext,
              background = Cwidget2,
-             default_icon = '/home/alvaro/images/power.png',
+             default_icon = '~/images/power.png',
              progs = [('shutdown 0', 'shutdown 0', 'logout from qtile')] 
 
              ),
