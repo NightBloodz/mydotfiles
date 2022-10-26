@@ -1,8 +1,8 @@
 * Shell --> Zsh
 * Terminal --> Kitty
 * WindowManager --> Qtile
-* menus --> Rofi
-* Picom for shadows and borders
+* Menus --> Rofi
+* Shadows and borders --> Picom
 
 # Rofi themes
 [https://github.com/adi1090x/rofi](https://github.com/adi1090x/rofi)
