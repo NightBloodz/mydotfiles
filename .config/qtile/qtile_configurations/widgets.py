@@ -1,7 +1,7 @@
 from libqtile import widget
 from .themes import *
-
-  
+from libqtile.command import lazy
+from qtile_extras import widget as ewidget
 
 widget_defaults = dict(
     font = "sans",
@@ -11,12 +11,14 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
-
+##mouse callbacks
+def calendar(qtile):
+    qtile.cmd_spawn('~/.config/eww/manythings/launchcal')
 
 widgets = [
 
    widget.GroupBox(
-             fontsize = 43,
+             fontsize = 35,
              margin_x = 10,
              highlight_method = "block",
              background = Cgroups,
@@ -106,7 +108,8 @@ widgets = [
    widget.Clock(
              foreground = Ctext,
              background = Cwidget1,
-             format = "%d/%m - %H:%M "
+             format = "%d/%m - %H:%M",
+             mouse_callbacks = {'Button1': lazy.spawn("~/.config/eww/manythings/launchcal")},
              ),
 
    widget.TextBox(
@@ -125,15 +128,13 @@ widgets = [
 
           ),
 
-  widget.BatteryIcon(
-              background = Cwidget2, 
-          ),
+  ewidget.UPowerWidget(background = Cwidget2),
 
   widget.LaunchBar(
              foreground = Ctext,
              background = Cwidget2,
              default_icon = '~/images/power.png',
-             progs = [('shutdown 0', 'shutdown 0', 'logout from qtile')] 
+             progs = [('shutdown 0', '~/.config/eww/dashboard/launch_dashboard', 'logout from qtile')] 
 
              ),
 ]
