@@ -159,6 +159,10 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
+## Some interesting packages
+```
+sudo pacman -S locate neovim snapd lsd bat
+```
 
 
 
