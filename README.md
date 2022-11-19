@@ -50,7 +50,7 @@ def autostart(): home = os.path.expanduser('~/.config/qtile/autostart.sh') subpr
 ```
 #!/bin/sh
 feh --bg-scale ~/images/minimalist-purple-sky-and-mountain-ex4suuw5xd4funov.jpg
-picom -b -c --corner-radius 20 --active-opacity 95 --shadow-radius
+picom -b -c --corner-radius 20 --active-opacity 95 --shadow-radius 20
 ```
 
 
@@ -67,7 +67,7 @@ If you want to change the Qtile Bar Widgets, you can edit ```qtile_configuration
 
 First, install Zsh Shell and dependences: 
 ```
-sudo pacman install zsh nerd-fonts
+sudo pacman -S zsh nerd-fonts
 ```
 
 Clone my repository and copy .zshrc:
@@ -90,12 +90,12 @@ Once finished, you can install these plugins:
 
 Extract aliases: 
 ```
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/extract/extract.plugin.zsh -P /usr/share/zsh/plugins/extract/
+sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/extract/extract.plugin.zsh -P /usr/share/zsh/plugins/extract/
 ```
 
 Dirhistory: 
 ```
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/dirhistory/dirhistory.plugin.zsh -P /usr/share/zsh/plugins/dirhistory/
+sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/dirhistory/dirhistory.plugin.zsh -P /usr/share/zsh/plugins/dirhistory/
 ```
 
 Autosuggestions: 
@@ -110,7 +110,7 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/sha
 
 Sudo with Esc key: 
 ```
-sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh /usr/share/zsh/plugins/sudo/
+sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh -P /usr/share/zsh/plugins/sudo/
 ```
 
 History substring search 
@@ -120,7 +120,7 @@ sudo git clone https://github.com/zsh-users/zsh-history-substring-search /usr/sh
 
 Arch linux aliases: 
 ```
-sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/archlinux/archlinux.plugin.zsh /usr/share/zsh/plugins/arch/
+sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/archlinux/archlinux.plugin.zsh -P /usr/share/zsh/plugins/arch/
 ```
 
 

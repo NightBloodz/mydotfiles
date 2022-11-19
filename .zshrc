@@ -27,8 +27,8 @@ source /usr/share/zsh/plugins/dirhistory/dirhistory.plugin.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/share/zsh/plugins/sudo/sudo.plugin.zsh
 source /usr/share/zsh/plugins/extract/extract.plugin.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
-source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/completion.zsh
+source /usr/share/doc/fzf/key-bindings.zsh
 
 alias h='history'
 alias ls='lsd'
