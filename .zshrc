@@ -30,7 +30,8 @@ source /usr/share/zsh/plugins/sudo/sudo.plugin.zsh
 source /usr/share/zsh/plugins/extract/extract.plugin.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
-source /usr/share/zsh/sudo/sudo.plugin.zsh
+source /usr/share/zsh/plugins/sudo/sudo.plugin.zsh
+source /usr/share/zsh/plugins/arch/archlinux.plugin.zsh
 
 alias h='history'
 alias ls='lsd'
@@ -42,7 +43,7 @@ alias aslr_on='echo 1 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias l='ls -l'
 alias ll='ls -al'
 alias xclip='/usr/bin/xclip -selection clipboard'
-alias p='python3'
+
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
@@ -90,4 +91,4 @@ neofetch
 
 
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
-source /usr/share/zsh-theme-powerlevel10k/powerleve.zsh-theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel.zsh-theme

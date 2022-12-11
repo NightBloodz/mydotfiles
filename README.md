@@ -17,7 +17,7 @@
 Install Qtile and dependences:
 ```
 sudo pacman -S qtile nerd-fonts xorg-server-xephyr
-pip install psutil qtile-extras
+yay -S psutil qtile-extras
 ```
 
 Clone my repository and copy the qtile configuration file:
