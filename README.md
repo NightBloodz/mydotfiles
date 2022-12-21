@@ -17,7 +17,8 @@
 Install Qtile and dependences:
 ```
 sudo pacman -S qtile nerd-fonts xorg-server-xephyr
-yay -S psutil qtile-extras
+yay -S qtile-extras
+pip install psutil
 ```
 
 Clone my repository and copy the qtile configuration file:
@@ -87,39 +88,22 @@ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zs
 ```
 
 Once finished, you can install these plugins: 
+  - Extract aliases
+  - DirHistory
+  - Autosuggestions
+  - Syntax highlighting
+  - Sudo with Esc key
+  - History substring search
+  - Arch linux aliases
 
-Extract aliases: 
+ 
 ```
 sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/extract/extract.plugin.zsh -P /usr/share/zsh/plugins/extract/
-```
-
-Dirhistory: 
-```
 sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/dirhistory/dirhistory.plugin.zsh -P /usr/share/zsh/plugins/dirhistory/
-```
-
-Autosuggestions: 
-```
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions.git /usr/share/zsh/plugins/zsh-autosuggestions/
-```
-
-Syntax highlighting: 
-```
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/share/zsh/plugins/zsh-syntax-highlighting/
-```
-
-Sudo with Esc key: 
-```
 sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh -P /usr/share/zsh/plugins/sudo/
-```
-
-History substring search 
-```
 sudo git clone https://github.com/zsh-users/zsh-history-substring-search /usr/share/zsh/plugins/zsh-history-substring-search/
-```
-
-Arch linux aliases: 
-```
 sudo wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/archlinux/archlinux.plugin.zsh -P /usr/share/zsh/plugins/arch/
 ```
 
