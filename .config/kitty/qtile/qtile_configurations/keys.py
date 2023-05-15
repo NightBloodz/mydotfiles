@@ -1,10 +1,9 @@
 from libqtile.config import Key
 from libqtile.command import lazy
 
+from .variables import *
 
 mod = "mod4"
-terminal = "kitty"
-
 
 keys = [
 
@@ -14,13 +13,6 @@ keys = [
     Key([mod], "Down", lazy.layout.down(), desc="Move focus down"),
     Key([mod], "Up", lazy.layout.up(), desc="Move focus up"),
 
-    Key([mod], "space", lazy.layout.next(), desc="Move window focus to other window"),
-   
-
-
-    #change to the left and right group 
-    Key([mod, "shift"], "Right", lazy.screen.next_group()),
-    Key([mod, "shift"], "Left", lazy.screen.prev_group()),
 
 
 
@@ -35,12 +27,14 @@ keys = [
 
     #launch programs
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod], "f", lazy.spawn("firefox"), desc="browser"),
+    Key([mod], "f", lazy.spawn(browser), desc="browser"),
+    Key([mod], "m", lazy.spawn("rofi -show drun -theme ~/.config/rofi/launchers/type-2/style-10.rasi"), desc="menu"),
+
     
     
 
     Key([mod, "shift"], "Return", lazy.layout.toggle_split(), desc="Toggle between split and unsplit sides of stack"),
-    Key([mod], "F11", lazy.next_layout(), desc="next layout"),
+    Key([mod], "d", lazy.next_layout(), desc="next layout"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),

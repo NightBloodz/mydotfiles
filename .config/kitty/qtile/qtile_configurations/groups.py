@@ -1,9 +1,9 @@
 from libqtile.config import Key, Group
 from libqtile.command import lazy
-from .keys import mod, keys
 
+from .keys import keys, mod
 
-groups = [Group(i) for i in [ "","","","","","漣" ]]
+groups = [Group(i, label="") for i in [ "1","2","3","4","5","6","7" ]]
 
 for i, group in enumerate(groups):
     n_escritorio = str(i+1)

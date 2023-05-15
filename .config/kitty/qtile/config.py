@@ -1,12 +1,12 @@
 from libqtile import hook
 from libqtile.utils import guess_terminal
 
-from qtile_configurations.themes import *
-from qtile_configurations.groups import groups
-from qtile_configurations.keys import mod, keys
-from qtile_configurations.screens import widget_defaults, screens
-from qtile_configurations.layouts import layouts
-from qtile_configurations.mouse import mouse
+from qtile_configurations.variables import *
+from qtile_configurations.groups import *
+from qtile_configurations.keys import *
+from qtile_configurations.screens import *
+from qtile_configurations.layouts import *
+from qtile_configurations.mouse import *
 from qtile_configurations.widgets import *
 
 

@@ -1,6 +1,9 @@
 import os
 
-interface="wlp0s20f3"
+interface="enp5s0"
+
+terminal = "kitty"
+browser = "firefox"
 
 border = ""
 border2 = ""
@@ -25,9 +28,9 @@ borderWidth = 0
 
 
 Cbar = "#1a1b26.95"
-barSize = 35
-barMargin = [20, 20, 10, 20]
-layoutMargin = 20
+barSize = 30
+barMargin = [10, 10, 10, 10]
+layoutMargin = 10
     
 
 
